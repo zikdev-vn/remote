@@ -12,7 +12,7 @@ chat_id="7447164672"
 # Gửi thông tin qua Telegram
 curl -s -X POST "https://api.telegram.org/bot$bot_token/sendMessage" \
      -d chat_id=$chat_id \
-     -d text="Tên thiết bị: $DEVICE_NAME\nTên người dùng: $USER_NAME\nĐịa chỉ IP: $IP"
+     -d text="Tên thiết bị: $DEVICE_NAME\n:  Tên người dùng: $USER_NAME\n:   Địa chỉ IP: $IP"
 
 # Tạo và cài đặt service systemd để tự động chạy script khi khởi động lại
 SERVICE_FILE="/etc/systemd/system/ip_notify.service"
