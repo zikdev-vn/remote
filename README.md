@@ -10,6 +10,7 @@
   ## Cách sủ dụng anydesk auto ket noi voi thiet bi
   - Đầu tiên cài đặt anydesk tu trang chủ chính thức
   ---
+  ---
   - Bước 1: trên màn hình chính chọn cài đặt
   - ![Bước 1](Accets/B1.png)
   - Bước 2: setting
@@ -39,7 +40,8 @@ echo "Hello World!"
 -
 <details>
   <summary>📌 Remote server linux no port </summary>
-
+  ---
+  ---
   ## Cách remote shell server no port
 </details>
 -
