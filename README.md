@@ -2,7 +2,7 @@
 
 ## use anydesk
 
-  <details>
+<details>
   <summary>📌 Anydesk remote </summary>
 
   ## Cách sủ dụng anydesk auto ket noi voi thiet bi
@@ -23,10 +23,12 @@
 ```sh
 echo "Hello World!"
 ```
+</details>
 ## Đối với server no port
 -----
 
-  <details>
+<details>
   <summary>📌 Remote server linux no port </summary>
 
   ## Cách remote shell server no port
+</details>
