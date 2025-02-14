@@ -40,9 +40,12 @@ echo "Hello World!"
 -
 <details>
   <summary>📌 Remote server linux no port </summary>
-  ---
-  ---
+  
+  
   ## Cách remote shell server no port
+  ---
+  ---
+  B1 cần cài
 </details>
 -
 -
