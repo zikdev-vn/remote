@@ -3,10 +3,9 @@
 ## use anydesk
 
 <details>
-  <summary>📌 Nhấn để mở rộng</summary>
+  <summary>📌 Anydesk remote </summary>
 
-  Nội dung ẩn ở đây. Bạn có thể viết bất cứ thứ gì.
-
+  ## Cách sủ dụng anydesk auto ket noi voi thiet bi
   - 📌 Danh sách gạch đầu dòng
   - ✅ Check box
   - 📷 Hình ảnh, code...
